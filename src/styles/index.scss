@@ -1,0 +1,138 @@
+@import './fonts/camphor';
+@import 'reset';
+@import 'colors';
+@import 'breakpoints';
+
+@import '../components/Navbar';
+@import '../components/Hero';
+@import '../components/About';
+@import '../components/Projects';
+@import '../components/Contact';
+@import '../components/Footer';
+
+@font-face {
+  font-family: 'Monaco';
+  src: url('./fonts/monaco-webfont.woff') format('woff');
+}
+
+:root {
+  --primary: #{$light-primary};
+  --text: #{$light-text};
+  --lightGrey: #{$light-lightGrey};
+  --projectcard: #{$light-projectcard};
+  --fadedPurple: #{$light-fadedPurple};
+  --terminal: #{$light-terminal};
+  --fadedBlue: #{$light-fadedBlue};
+  --highlighterGreen: #{$light-highlighterGreen};
+  --linkTeal: #{$light-linkTeal};
+  --background: #{$light-background};
+  --switch-bg: #ccc;
+}
+
+.dark-mode {
+  --primary: #{$dark-primary};
+  --text: #{$dark-text};
+  --lightGrey: #{$dark-lightGrey};
+  --projectcard: #{$dark-projectcard};
+  --fadedPurple: #{$dark-fadedPurple};
+  --terminal: #{$dark-terminal};
+  --fadedBlue: #{$dark-fadedBlue};
+  --highlighterGreen: #{$dark-highlighterGreen};
+  --linkTeal: #{$dark-linkTeal};
+  --background: #{$dark-background};
+  --swatch-bg: #fff;
+}
+
+body {
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'pnum';
+  font-variant-numeric: proportional-nums;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.home-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#topBackground {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 760px;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background-color: white;
+  z-index: -999;
+
+  @include mobile {
+    height: 500px;
+  }
+}
+
+.container-lg {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.section-title {
+  color: var(--text);
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.section-title:after {
+  content: ' ';
+  border: 4px solid var(--primary);
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50px;
+}
+
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  border-radius: 50%;
+  right: 20px;
+  background-color: var(--primary); // Change this color as needed
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s;
+  width: 40px;
+  height: 40px;
+  
+  &:hover {
+    background-color: var(--fadedBlue); // Change this to a darker shade for hover effect
+  }
+}
