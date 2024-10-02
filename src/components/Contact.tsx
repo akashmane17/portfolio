@@ -12,6 +12,7 @@ const Contact = () => {
           akashmane277@gmail.com
         </a>
       </span>
+
       <span>
         <a
           rel="noopener noreferrer"
@@ -21,6 +22,7 @@ const Contact = () => {
           LinkedIn
         </a>
       </span>
+
       <span>
         <a
           rel="noopener noreferrer"
@@ -28,6 +30,16 @@ const Contact = () => {
           href="https://github.com/akashmane17"
         >
           GitHub
+        </a>
+      </span>
+
+      <span>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="/akashmane_resume.pdf"
+        >
+          Resume
         </a>
       </span>
     </div>

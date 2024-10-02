@@ -4,7 +4,7 @@ import sun from "@/images/icons/sun.svg";
 import Image from "next/image";
 
 const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);

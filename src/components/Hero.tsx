@@ -4,11 +4,12 @@ import Typewriter from "./Typewriter";
 const Hero = () => {
   return (
     <div className="hero-container">
-      <Typewriter className="hero-title" text="Welcome." />
+      <Typewriter className="hero-title" text="Akash Mane" />
       <div className="hero-description">
-        I'm Akash, a software engineer based in India.
+        Welcome to my digital playground! I'm deeply enthusiastic about
+        technology and enjoy creating projects that fascinate me. At present, I am a software engineer at SOV Technologies
         <br />
-        Check out my <a href="#projects">side-projects</a> below.
+        Check out my <a href="#projects">Projects</a> below.
       </div>
     </div>
   );
