@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import liveIco from "@/images/icons/live.svg";
+import Image, { StaticImageData } from "next/image";
 import githubIco from "@/images/icons/github.svg";
 
 interface ProjectSkillProps {
@@ -19,7 +18,7 @@ interface ProjectLinksProps {
 }
 
 interface ProjectCardProps {
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   skills: string[];
@@ -31,7 +30,7 @@ interface ProjectCardProps {
 
 interface ProjectsProps {
   projects: {
-    image: string;
+    image: StaticImageData;
     title: string;
     description: string;
     skills: string[];
@@ -57,7 +56,7 @@ const ProjectSkills = ({ skills }: ProjectSkillsProps) => {
 };
 
 const ProjectLinks = ({ links }: ProjectLinksProps) => {
-  const { github, preview } = links;
+  const { github } = links;
   return (
     <div className="project-links">
       {/* <a

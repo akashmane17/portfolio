@@ -26,7 +26,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
     let str = "";
     let typeSpeed = 0;
 
-    inputText.split("").forEach((char, index) => {
+    inputText.split("").forEach((char) => {
       typeSpeed += Math.random() * (maxSpeed - minSpeed) + minSpeed;
       setTimeout(() => {
         str += char;

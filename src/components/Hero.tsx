@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-container">
       <Typewriter className="hero-title" text="Akash Mane" />
       <div className="hero-description">
-        Welcome to my digital playground! I'm deeply enthusiastic about
+        Welcome to my digital playground! I&apos;m deeply enthusiastic about
         technology and enjoy creating projects that fascinate me. At present, I am a software engineer at SOV Technologies
         <br />
         Check out my <a href="#projects">Projects</a> below.

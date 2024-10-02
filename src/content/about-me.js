@@ -1,4 +1,4 @@
-export default [
+const aboutme = [
   {
     input: "Akash.currentLocation",
     return: '"Mumbai , India"',
@@ -19,8 +19,7 @@ export default [
   },
   {
     input: "Akash.education",
-    return:
-      '"B.Sc. Computer Science - University of Mumbai, India"',
+    return: '"B.Sc. Computer Science - University of Mumbai, India"',
   },
   {
     input: "Akash.skills",
@@ -28,3 +27,5 @@ export default [
       '["React", "Spring Boot", "Java", "Node JS", "Express JS", "Angular", "Next JS", "Python", "C++", "git"]',
   },
 ];
+
+export default aboutme;
